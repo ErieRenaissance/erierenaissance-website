@@ -5,43 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erie Renaissance</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-<style>
-    body {
-        background-image: url('https://raw.githubusercontent.com/ErieRenaissance/erierenaissance-website/94a91fb9ff63473c2795c068d90f4becee475e94/Bayfront%20City%20View%20-%20Background%20Mute.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    .overlay {
-        background: rgba(255, 255, 255, 0.9);
-    }
-</style>
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://raw.githubusercontent.com/ErieRenaissance/erierenaissance-website/94a91fb9ff63473c2795c068d90f4becee475e94/Bayfront%20City%20View%20-%20Background%20Mute.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Inter', sans-serif;
+        }
+        .overlay {
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #3B82F6, #2563EB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
-<body class="text-gray-800">
-    <div class="min-h-screen flex flex-col justify-center items-center">
-        <div class="overlay rounded-lg p-8 shadow-lg text-center max-w-2xl">
-            <h1 class="text-4xl font-bold mb-4">
+<body class="text-gray-800 antialiased">
+    <div class="min-h-screen flex flex-col justify-center items-center px-4">
+        <div class="overlay rounded-2xl p-10 shadow-2xl text-center max-w-3xl w-full">
+            <h1 class="text-5xl font-bold mb-6 gradient-text">
                 Building Erie's Renaissance
             </h1>
-            <p class="text-gray-700 text-lg mb-8">
+            <p class="text-gray-600 text-xl mb-8 leading-relaxed">
                 Erie's storied past is the foundation for its promising future. We're here to bridge that journey.
             </p>
-            <p class="mb-6">
-                <strong>Erie Renaissance</strong> invests in our community's potential through strategic real estate development, business acquisitions, and revitalization projects that honor our heritage while building tomorrow's opportunities.
-            </p>
-            <p class="mb-6">
-                We don't just envision Erie's comeback—we're actively creating it through targeted investments in Erie's neighborhoods and business districts, development projects that preserve character while adding new vitality, and expert consulting that turns local knowledge into actionable growth strategies.
-            </p>
-            <p class="mb-6">
-                Join us in crafting the next chapter of Erie's story—where history meets innovation, and community drives progress.
-            </p>
-            <a href="#" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:bg-blue-700 transition duration-200">
+            <div class="space-y-6 mb-8">
+                <p class="text-gray-700 leading-relaxed">
+                    <strong class="text-blue-600">Erie Renaissance</strong> invests in our community's potential through strategic real estate development, business acquisitions, and revitalization projects that honor our heritage while building tomorrow's opportunities.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    We don't just envision Erie's comeback—we're actively creating it through targeted investments in Erie's neighborhoods and business districts, development projects that preserve character while adding new vitality, and expert consulting that turns local knowledge into actionable growth strategies.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Join us in crafting the next chapter of Erie's story—where history meets innovation, and community drives progress.
+                </p>
+            </div>
+            <a href="#" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
                 Contact Us
             </a>
         </div>
-        <footer class="text-center text-gray-200 mt-8 text-sm">
+        <footer class="text-center text-gray-300 mt-8 text-sm">
             © 2025 Erie Renaissance. All rights reserved.
         </footer>
     </div>
